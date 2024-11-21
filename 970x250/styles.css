@@ -11,6 +11,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'cupra-italic';
   src: url('fonts/subset-Cupra-Italic.woff2') format('woff2');
@@ -36,7 +37,7 @@ sup, sub {
 }
 
 html, body {
-  width:300px;
+  width:970px;
   height:250px;
   margin: 0;
 }
@@ -46,7 +47,7 @@ html, body {
   position:absolute;
   left:0px;
   top:0px;
-  width:300px;
+  width:970px;
   height:250px;
   background-color: #0C479D;
   border: solid 1px #000000;
@@ -60,7 +61,7 @@ html, body {
   position:absolute;
   left:0px;
   top:0px;
-  width:300px;
+  width:970px;
   height:60
   0px;
   overflow:hidden;
@@ -70,7 +71,7 @@ html, body {
   position:absolute;
   left: 0px;
   top: 0px;
-  width: 300px;
+  width: 970px;
   height: auto;
 }
 
@@ -103,39 +104,35 @@ html, body {
   font-family: 'cupra-italic', sans-serif;
 }
 #text-1 {
-  top: 166px;
-  left: 42px;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 1.3px;
+  top: 96px;
+  right: 24px;
+  font-size: 31.3px;
+  line-height: 28px;
+  text-align: right;
+  letter-spacing: 1.9px;
 }
 #text-2{
-  left: 41px;
-  top: 166.5px;
-  font-size: 10.7px;
+  right: 27px;
+  top: 135px;
+  font-size: 13px;
+  text-align: right;
 }
 #text-legal {
-  bottom: 3px;
-  left: 15px;
-  font-size: 8.2px;
+  bottom: 4px;
+  right: 28px;
+  font-size: 8.9px;
   line-height: 10px;
-  text-align: left;
+  text-align: right;
 }
 
 #car {
   transform: scale(0.9);
-  /* left: 11px; */
-}
-#left_logo{
-  width: 35.5px;
-  top: 12px;
-  left: 10.5px;
 }
 
 #default_exit{
   top:0px;
   left:0px;
-  width: 300px;
+  width: 970px;
   height: 250px;
 }
 
