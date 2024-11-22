@@ -16,7 +16,7 @@ function init() {
 
   // Set Global Timeline
   tl1 = new TimelineMax({ onComplete: endTime });
-  
+  setRollover();
   animate();
 }
 
@@ -27,9 +27,7 @@ function animate() {
   
   // tl1.staggerTo('#text-1 span', 0.5, { autoAlpha: 1, ease: "power1.in" }, 1, 0.5);
   tl1.to('#cta', 0.5, { autoAlpha: 1, ease: "power1.in" }, 1);
-  tl1.call(setRollover);
-
-  tl2.to('#car', 7, { scale: 1, ease: "power1.in" }, 0);
+  tl1.to('#car', 7, { scale: 1, ease: "power1.in", force3D: true }, 0);
 
 }
 

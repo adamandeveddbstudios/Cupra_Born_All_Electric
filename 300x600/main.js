@@ -16,7 +16,7 @@ function init() {
 
   // Set Global Timeline
   tl1 = new TimelineMax({ onComplete: endTime });
-  
+  setRollover();
   animate();
 }
 
@@ -28,21 +28,7 @@ function animate() {
   tl1.staggerTo('#text-1 span', 0.5, { autoAlpha: 1, ease: "power1.in" }, 1, 0.5);
   tl1.to('#text-2', 0.5, { autoAlpha: 1, ease: "power1.in" }, 3);
   tl1.to('#cta', 0.5, { autoAlpha: 1, ease: "power1.in" }, '+=1');
-  tl1.call(setRollover);
-
-  tl2.to('#car', 4, {
-    scale: 1,
-    ease: "power3.out",
-    force3D: true,
-    rotation: 0.001,  // Small rotation to stabilize GPU rendering
-    transformOrigin: "center center",
-    onStart: function() {
-      document.querySelector('#car').style.willChange = 'transform';  // Optimize GPU
-    },
-    onComplete: function() {
-      document.querySelector('#car').style.willChange = '';  // Clean up
-    }
-  }, 0);
+  tl1.to('#car', 4, { scale: 1, ease: "power1.in", force3D: true }, 0);
 }
 
 function randomInt(min, max) { // min and max included 

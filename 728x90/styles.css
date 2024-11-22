@@ -127,6 +127,9 @@ html, body {
 
 #car {
   transform: scale(0.9);
+  will-change: transform;
+  backface-visibility: hidden; /* Optional: Helps with 3D rendering artifacts */
+  transition: transform 0.1s ease-in-out;
   top: -3px;
 }
 
