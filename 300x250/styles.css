@@ -124,6 +124,8 @@ html, body {
 
 #car {
   transform: scale(0.9);
+  will-change: transform;
+  backface-visibility: hidden; /* Optional: Helps with 3D rendering artifacts */
 }
 #left_logo{
   width: 35.5px;
