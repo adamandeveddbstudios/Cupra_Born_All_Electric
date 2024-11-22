@@ -30,15 +30,15 @@ function animate() {
   tl1.to('#cta', 0.5, { autoAlpha: 1, ease: "power1.in" }, '+=1');
   tl1.call(setRollover);
 
-  tl2.to('#car', 2, { scale: 1,
-    ease: "power1.in",
-    force3D: true,
+  tl2.to('#car', 4, {
+    scale: 1,
+    ease: "power3.in",
+    force3D: true,  // Forces GPU acceleration
     transformOrigin: "center center",
-    onStart: function() {
-      // Force the use of GPU acceleration
-      document.body.style.transform = "translate3d(0, 0, 0)";
-    } }, 0);
-
+    x: "0",  // No horizontal movement
+    y: "0",  // No vertical movement
+    z: "0",  // Apply 3D acceleration
+  }, 0);
 }
 
 function randomInt(min, max) { // min and max included 
