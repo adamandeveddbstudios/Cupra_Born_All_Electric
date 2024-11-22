@@ -126,7 +126,10 @@ html, body {
 }
 
 #car {
-  transform: scale(0.9);
+  position: absolute;  /* Avoid conflicting layout styles */
+  top: 0;
+  left: 0;
+  transform: scale(0.91);
   will-change: transform;
 }
 
