@@ -127,6 +127,7 @@ html, body {
 
 #car {
   transform: scale(0.9);
+  will-change: transform;
 }
 
 #default_exit{
