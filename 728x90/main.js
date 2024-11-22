@@ -30,7 +30,7 @@ function animate() {
   tl1.to('#text-2', 0.5, { autoAlpha: 1, ease: "power1.in" }, 3.8);
   tl1.to('#cta', 0.5, { autoAlpha: 1, ease: "power1.in" }, '+=1');
   tl1.call(setRollover);
-  tl2.to('#car', 4, { scale: 1, rotation: 0.01, ease: "power1.in" }, 0);
+  tl2.to('#car', 4, { scale: 1, ease: "power1.in" }, 0);
 
 }
 
