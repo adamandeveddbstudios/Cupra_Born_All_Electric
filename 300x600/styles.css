@@ -126,12 +126,13 @@ html, body {
 }
 
 #car {
-  position: absolute;  /* Ensure correct positioning */
+  position: absolute;
   top: 0;
   left: 0;
-  transform: scale(0.9);  /* Start with slightly scaled down */
-  will-change: transform; /* Hint to the browser to optimize this element */
-  transform-origin: center center;  /* Ensure scaling happens from the center */
+  transform: scale(0.9) translate3d(0, 0, 0);  /* Ensure GPU acceleration */
+  will-change: transform;  /* Optimize this element for transformations */
+  transform-origin: center center;  /* Scale from the center */
+  backface-visibility: hidden;  /* Prevent rendering back faces */
 }
 
 #default_exit{
