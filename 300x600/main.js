@@ -31,13 +31,18 @@ function animate() {
   tl1.call(setRollover);
 
   tl2.to('#car', 4, {
-    scale: 1,
-    ease: "power3.in",
+    scale: 1,  // Animate to full scale
+    ease: "power3.out",  // Smoother easing at the end of the animation
     force3D: true,  // Forces GPU acceleration
-    transformOrigin: "center center",
-    x: "0",  // No horizontal movement
-    y: "0",  // No vertical movement
-    z: "0",  // Apply 3D acceleration
+    transformOrigin: "center center",  // Ensure scaling is centered
+    onStart: function() {
+      // Add will-change when the animation starts for performance optimization
+      document.querySelector('#car').style.willChange = 'transform';
+    },
+    onComplete: function() {
+      // Remove will-change after the animation completes to prevent performance issues
+      document.querySelector('#car').style.willChange = '';
+    }
   }, 0);
 }
 
