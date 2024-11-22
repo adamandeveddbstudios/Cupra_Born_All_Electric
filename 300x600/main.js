@@ -12,7 +12,7 @@ function init() {
   startTime = new Date();
 
   // Set Background Timeline
-  tl2 = new TimelineMax({  });
+  tl2 = new TimelineMax({ repeat:-1 });
 
   // Set Global Timeline
   tl1 = new TimelineMax({ onComplete: endTime });
