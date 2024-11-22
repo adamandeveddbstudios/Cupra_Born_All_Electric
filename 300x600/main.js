@@ -30,7 +30,14 @@ function animate() {
   tl1.to('#cta', 0.5, { autoAlpha: 1, ease: "power1.in" }, '+=1');
   tl1.call(setRollover);
 
-  tl2.to('#car', 4, { scale: 1, force3D: true, transformOrigin: "center center", ease: "power1.in" }, 0);
+  tl2.to('#car', 2, { scale: 1,
+    ease: "power1.in",
+    force3D: true,
+    transformOrigin: "center center",
+    onStart: function() {
+      // Force the use of GPU acceleration
+      document.body.style.transform = "translate3d(0, 0, 0)";
+    } }, 0);
 
 }
 
