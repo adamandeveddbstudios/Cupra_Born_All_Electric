@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'cupra-book';
+  src: url('fonts/subset-Cupra-Book.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'cupra-regular';
+  src: url('fonts/subset-Cupra-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'cupra-italic';
+  src: url('fonts/subset-Cupra-Italic.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.absolute {
+  position:absolute;
+  height: auto;
+}
+
+sup, sub {
+  font-size: 50%;
+}
+
+html, body {
+  width:300px;
+  height:600px;
+  margin: 0;
+}
+
+#main,
+#background {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:300px;
+  height:600px;
+  background-color: #0C479D;
+  border: solid 1px #000000;
+}
+
+#main {
+  overflow:hidden;
+}
+
+#image-container {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:300px;
+  height:60
+  0px;
+  overflow:hidden;
+}
+
+.full-width {
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 300px;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+}
+
+.copy {
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.copy span {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cupra-regular {
+  font-family: 'cupra-regular', sans-serif;
+}
+
+.cupra-book {
+  font-family: 'cupra-book', sans-serif;
+}
+.cupra-italic {
+  font-family: 'cupra-italic', sans-serif;
+}
+#text-1 {
+  top: 406px;
+  right: 17px;
+  font-size: 30px;
+  line-height: 27px;
+  text-align: right;
+  letter-spacing: 0.9px;
+}
+#text-2{
+  right: 19px;
+  top: 468px;
+  font-size: 12px;
+  text-align: right;
+}
+#text-legal {
+  bottom: 6px;
+  right: 7px;
+  font-size: 7.4px;
+  line-height: 10px;
+  text-align: right;
+}
+
+#car {
+  transform: scale(0.9);
+}
+
+#default_exit{
+  top:0px;
+  left:0px;
+  width: 300px;
+  height: 600px;
+}
+
+.btn{
+  position: absolute;
+  top:0px;
+  left:0px;
+  cursor: pointer;
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+  z-index: 200;
+}
+
+:focus{outline: 0}
+
+::-moz-focus-inner{border: 0}
